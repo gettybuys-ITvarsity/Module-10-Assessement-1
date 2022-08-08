@@ -20,8 +20,8 @@
         <p id="greeting"></p>
         
         <script>
-            document.getElementById("getData").addEventListener('click',getData);
-            document.getElementById("getList").addEventListener('click',getList);
+            document.getElementById("getData").addEventListener('click', getData);
+            document.getElementById("getList").addEventListener('click', getList);
             document.getElementById("submitForm").addEventListener('click',submitForm);
             
             function getData(){
@@ -44,7 +44,7 @@
                 .then(function(data){
                     var output = "<h1>Posts</h1>";
                     
-                    for(a = 0; a < data.lenght; a++){
+                    for(a = 0; a < data.length; a++){
                     output += 
                         `
                         <ul>
